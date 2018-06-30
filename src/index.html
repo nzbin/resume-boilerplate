@@ -23,7 +23,7 @@
     }
 
     .page {
-      width: 800px;
+      max-width: 800px;
       margin: 20px auto;
       padding: 20px;
       box-shadow: 1px 1px 8px rgba(0, 0, 0, .15);
@@ -36,7 +36,18 @@
       border-left: 5px solid #F8B62D;
     }
 
-    .b-l-2 {
+    .border {
+      position: relative;
+    }
+
+    .border:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -2px;
+      width: 2px;
+      height: 100%;
+      background: #ddd;
       border-left: 2px solid #ddd !important;
     }
 
@@ -66,8 +77,8 @@
         <div class="box bg-gray-lightest p-t-0 p-b-0">
           <div class="row">
             <div class="col-4 p-t-10 p-b-10">● 手机：13120180628</div>
-            <div class="col-4 p-t-10 p-b-10 b-l-2">● Email：nzb329@163.com</div>
-            <div class="col-4 p-t-10 p-b-10 b-l-2">● QQ/微信：123456789</div>
+            <div class="col-4 p-t-10 p-b-10 border">● Email：nzb329@163.com</div>
+            <div class="col-4 p-t-10 p-b-10 border">● QQ/微信：123456789</div>
           </div>
         </div>
       </div>
@@ -79,8 +90,8 @@
         <div class="box bg-gray-lightest p-t-0 p-b-0">
           <div class="row">
             <div class="col-4 p-t-10 p-b-10">● 叙帝利 | 男 | 1990</div>
-            <div class="col-4 p-t-10 p-b-10 b-l-2">● 山东理工 | 工业设计 | 本科</div>
-            <div class="col-4 p-t-10 p-b-10 b-l-2">● 应聘前端开发 | 3 年工作经验</div>
+            <div class="col-4 p-t-10 p-b-10 border">● 山东理工 | 工业设计 | 本科</div>
+            <div class="col-4 p-t-10 p-b-10 border">● 应聘前端开发 | 3 年工作经验</div>
           </div>
         </div>
         <div class="box bg-gray-lightest">
